@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "libsqlite3.dylib": [],
+                    "CoreTelephony.framework": []
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": []
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "APP_KEY": [],
+                    "NSLocationAlwaysUsageDescription": [],
+                    "UIBackgroundModes": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {},
+    "dependent_plugins": {}
+}

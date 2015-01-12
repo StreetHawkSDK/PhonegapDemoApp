@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:16
+-keep class com.streethawk.library.ActivityRecognitionIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.streethawk.library.SHFeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.streethawk.library.SelftestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.streethawk.library.SimpleGCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.streethawk.library.SimpleGCMReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.streethawk.library.StreethawkBeaconService { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.streethawk.library.StreethawkBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.streethawk.library.StreethawkLocationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:5
+-keep class com.streethawkapp.SHSamplePG.SHSamplePG { <init>(...); }
+

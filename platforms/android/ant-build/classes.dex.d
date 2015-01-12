@@ -1,0 +1,22 @@
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes.dex : \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawk/plugin/Streethawk.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/BuildConfig.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/Manifest$permission.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/Manifest.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$attr.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$color.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$drawable.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$id.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$integer.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$string.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$style.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$styleable.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R$xml.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/R.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/classes/com/streethawkapp/SHSamplePG/SHSamplePG.class \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/classes-7564582459f0b4f222256595cadea7d4.jar \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/classes-66cc9a7567242577c0f56268ea471e0c.jar \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/StreethawkLibrary-cb80f1daf7091db7e0023466e441e13f.jar \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/android-support-v4-547b74c236a00590c6ea47c2e542e553.jar \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/google-play-services-4b78de268a25b15e5d0a5fc2bd9cb3a0.jar \
+/Users/anuragkondeya/AndroidStudioWorkspace/Phonegap/App/platforms/android/ant-build/dexedLibs/gson-2.2.4-5415cebc2b8a7e629322c3c0ed7d48a4.jar \
