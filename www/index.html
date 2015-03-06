@@ -52,7 +52,7 @@
 		sh.shCustomActivityList(argumentsArray);
 		sh.shSetBeaconSupport(true);
 		sh.shSetiTunesId("abc");
-		sh.shSetGcmSenderId("223814131914");
+		sh.shSetGcmSenderId("666472741872");
 		sh.streethawkinit();
 		sh.shSetManualLocation(-33.125,151.125);
 		sh.displayBadge(1);
@@ -62,10 +62,8 @@
         sh.tagString("sh_email","anurag@streethawk.com");
 		sh.incrementTag("UserLevel");
 		sh.removeTag("UserDeleted");
-		sh.shGetAppKey(function(result){alert(result)},function(){});
-		
-	
-		
+		//sh.shGetAppKey(function(result){alert(result)},function(){});
+		sh.shDeeplinking(function(result){alert(result)},function(){});		
 		function shSuccess(result){
             var title = result.title;
             var message  = result.message;
