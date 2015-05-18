@@ -9,8 +9,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />    
-    <gap:plugin name="com.streethawk.plugin">
-        <param name="APP_KEY" value="SHSamplePG" />
-        <param name="URL_SCHEME" value="shsamplepg" />
-    </gap:plugin>
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
 </widget>
