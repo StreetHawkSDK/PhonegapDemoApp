@@ -124,7 +124,7 @@
             var message  = result.message;
             var data = result.data;
             alert("custom dialog callback. \naction: " + action + ", msgid: " + msgid + ", title: " + title + ", message: " + message + ", data: " + data + ".");
-            sh.sendPushResult(msgid, 0); //let continue as accept
+            sh.sendPushResult(msgid, 1); //let continue as accept
         }
         //sh.pushDataCallback(pushDataSuccess, function(){});
         
@@ -148,7 +148,7 @@
             //for (int i = 0; i < result.count; i ++) //runtime script error
             //{
             //    var feed = result[i];
-            //    sh.reportFeedRead(feed.feedId, 0);
+            //    sh.reportFeedRead(feed.feedId, 1);
             //}
         }
         sh.feedItemCallback(feedItemSuccess, function(){});
