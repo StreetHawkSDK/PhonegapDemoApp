@@ -61,6 +61,7 @@
         //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
         
         //init
+        //sh.setAppKey("SHSample");
 		sh.shSetBeaconSupport(true);
 		sh.shSetiTunesId("507040546");
         //sh.shiTunesId(function(result){alert("itunes id: " + result)},function(){});
@@ -160,7 +161,7 @@
         sh.notifyNewFeedCallback(notifyNewFeedSuccess, function(){});
         
         //pointzi
-        //sh.getShareUrlForAppDownload("child_campaign", "shsamplepg://launchvc?path=value", function(result){alert("pointzi share url: " + result)}, function(){});
+        //sh.originateShareWithCampaign("child_campaign", "shsamplepg://launchvc?path=value", function(result){alert("pointzi share url: " + result)}, function(){});
         //sh.InviteFriendsToDownloadApplication("child_campaign", "shsamplepg://launchvc?path=value", "hello email title", "hello email body");
         
         //ios not use
