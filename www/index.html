@@ -76,12 +76,14 @@
         //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
         
         //tag
-        //sh.tagNumeric("numeric_key", 5);
-        //sh.tagString("string_key", "liked");
+        //sh.tagNumeric("numeric_key", 5, function(result){alert("tag numeric result: " + result)}, function(){});
+        //sh.tagString("string_key", "liked", function(result){alert("tag string result: " + result)}, function(){});
+        //sh.tagString("sh_phone", "abcdefg", function(result){alert("tag sh_phone result: " + result)}, function(){});
+        //sh.tagString("sh_phone", "+123456", function(result){alert("tag sh_phone result: " + result)}, function(){});
         //sh.tagString("sh_email", "anurag@streethawk.com");
-        //sh.tagDatetime("date_key", "2016-6-18");
-        //sh.incrementTag("numeric_key");
-        //sh.removeTag("UserLevel");
+        //sh.tagDatetime("date_key", "2016-6-18", function(result){alert("tag datetime result: " + result)}, function(){});
+        //sh.incrementTag("numeric_key", function(result){alert("increment tag result: " + result)}, function(){});
+        //sh.removeTag("numeric_key", function(result){alert("remove tag result: " + result)}, function(){});
         
         //view enter/exit
         sh.currentPage("index");
