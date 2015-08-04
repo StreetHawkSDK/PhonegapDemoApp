@@ -175,6 +175,16 @@
         sh.forcePushToNotificationBar(true);
     }
         
+    //Phonegap internal plugin CDVHandleOpenURL has same function as `sh.shDeeplinking(function(result){alert("open url: " + result)},function(){});` both when App in BG and App not launch.
+    //Use one of them, otherwise two duplicated alert show.
+    //function handleOpenURL(url) //new template requires this must be global, cannot inside above function.
+    //{
+    //    setTimeout(function()
+    //    {
+    //        alert("CDVHandleOpenURL callback: " + url);
+    //    }, 0);
+    //}
+        
         </script>
     </body>
 </html>
