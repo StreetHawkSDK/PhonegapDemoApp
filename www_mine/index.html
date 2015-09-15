@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="plugins/com.streethawk.plugin/www/Streethawk.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady() {
+    	var sh = cordova.require("com.streethawk.plugin.Streethawk");
+        
+        sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
+        //sh.shEnableLogs(function(result){alert("enable logs: " + result)},function(){});
+        
+        //custom activity
+        var argumentsArray = [];
+        argumentsArray.push({settings:"settings.html"});
+        argumentsArray.push({home:"index.html"});
+        sh.shCustomActivityList(argumentsArray);
+        
+        //default location and notification
+        //sh.shSetDefaultLocationSupport(false); //not promote location permission until enable
+        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)},function(){});
+        //sh.shSetDefaultPushNotificationSupport(false); //not promote notification permission until enable
+        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
+        
+        //init
+        //sh.setAppKey("SHSample");
+		sh.shSetBeaconSupport(true);
+		sh.shSetiTunesId("507040546");
+        //sh.shiTunesId(function(result){alert("itunes id: " + result)},function(){});
+		sh.shSetGcmSenderId("666472741872");
+		sh.streethawkinit();
+        //sh.shGetAppKey(function(result){alert("app key: " + result)},function(){});
+        
+        //change default settings
+        //sh.shSetIsUseLocation(true);
+        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)},function(){});
+        //sh.shSetIsPushNotificationEnabled(true);
+        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
+        
+        //tag
+        //sh.tagNumeric("numeric_key", 5, function(result){alert("tag numeric result: " + result)}, function(){});
+        //sh.tagString("string_key", "liked", function(result){alert("tag string result: " + result)}, function(){});
+        //sh.tagString("sh_phone", "abcdefg", function(result){alert("tag sh_phone result: " + result)}, function(){});
+        //sh.tagString("sh_phone", "+123456", function(result){alert("tag sh_phone result: " + result)}, function(){});
+        //sh.tagString("sh_email", "anurag@streethawk.com");
+        //sh.tagDatetime("date_key", "2016-6-18", function(result){alert("tag datetime result: " + result)}, function(){});
+        //sh.incrementTag("numeric_key", function(result){alert("increment tag result: " + result)}, function(){});
+        //sh.removeTag("numeric_key", function(result){alert("remove tag result: " + result)}, function(){});
+        
+        //view enter/exit
+        sh.currentPage("index");
+		
+		//feedback
+        //sh.shSendSimpleFeedback("feedback title", "hello, this is feedback message");
+        
+        //sdk version
+        //sh.getSHLibraryVersion(function(result){alert("sdk version: " + result)},function(){});
+        
+        //streethawk format current time
+        //sh.getCurrentFormattedDateTime(function(result){alert("current time: " + result)},function(){});
+        
+        //alert setting
+        //sh.shSetAlertSetting(60);
+		//sh.shAlertSettings(function(result){alert("alert settings: " + result)},function(){});
+		
+        //open url
+		sh.shDeeplinking(function(result){alert("open url: " + result)},function(){});
+        
+        //launch page
+        sh.shRegisterViewCallback(function(result){alert("launch page by callback: " + result)},function(){});
+        
+        //raw json
+		function rawjsonSuccess(result)
+        {
+            var title = result.title;
+            var message  = result.message;
+            var rawjson = result.json;
+            alert("raw json callback. \ntitle: " + title + ", message: " + message + ", json: " + rawjson + ".");
+        }
+        sh.shRawJsonCallback(rawjsonSuccess, function(){});
+        
+        //custom confirm dialog
+        function pushDataSuccess(result)
+        {
+            var action = result.action;
+            var msgid = result.msgid;
+            var title = result.title;
+            var message  = result.message;
+            var data = result.data;
+            alert("custom dialog callback. \naction: " + action + ", msgid: " + msgid + ", title: " + title + ", message: " + message + ", data: " + data + ".");
+            sh.sendPushResult(msgid, 1); //let continue as accept
+        }
+        //sh.pushDataCallback(pushDataSuccess, function(){});
+        
+        //handle push result
+        function pushResultSuccess(result)
+        {
+            var pushresult = result.result;
+            var action = result.action;
+            var msgid = result.msgid;
+            var title = result.title;
+            var message  = result.message;
+            var data = result.data;
+            alert("push result callback. \nresult: " + pushresult + ", action: " + action + ", msgid: " + msgid + ", title: " + title + ", message: " + message + ", data: " + data + ".");
+        }
+        //sh.pushResultCallback(pushResultSuccess, function(){});
+        
+        //feed, not tested same as Android, for further release.
+        function feedItemSuccess(result)
+        {
+            alert("Fetch feeds: " + result);
+            //for (int i = 0; i < result.count; i ++) //runtime script error
+            //{
+            //    var feed = result[i];
+            //    sh.reportFeedRead(feed.feedId, 1);
+            //}
+        }
+        sh.feedItemCallback(feedItemSuccess, function(){});
+        function notifyNewFeedSuccess()
+        {
+            alert("New feed found.");
+            sh.shGetFeedDataFromServer(0);
+        }
+        sh.notifyNewFeedCallback(notifyNewFeedSuccess, function(){});
+        
+        //pointzi
+        //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, function(){});
+        //sh.originateShareWithSourceSelection("child_campaign", "shsamplepg://launchvc?path=value", "http://www.streethawk.com");
+
+        //ios not use
+        sh.sendLogForTagUser();
+        sh.shSetManualLocation();
+        sh.displayBadge(1);
+        sh.setUseCustomDialog(false);
+        sh.shEnterBeacon();
+        sh.shExitBeacon();
+        sh.forcePushToNotificationBar(true);
+    }
+        
+    //Phonegap internal plugin CDVHandleOpenURL has same function as `sh.shDeeplinking(function(result){alert("open url: " + result)},function(){});` both when App in BG and App not launch.
+    //Use one of them, otherwise two duplicated alert show.
+    //function handleOpenURL(url) //new template requires this must be global, cannot inside above function.
+    //{
+    //    setTimeout(function()
+    //    {
+    //        alert("CDVHandleOpenURL callback: " + url);
+    //    }, 0);
+    //}
+        
+        </script>
+    </body>
+</html>

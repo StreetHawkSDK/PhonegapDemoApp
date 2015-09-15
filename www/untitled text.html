@@ -55,18 +55,7 @@
 		sh.shSetGcmSenderId("666472741872");
 		//sh.setUseCustomDialog(true);
 		sh.setAppKey("SHSample");
-		 
-         console.log("Anurag starting app with shsample");
-         function shSuccess(result){
-             var title = result.title;
-             var message  = result.message;
-             var rawjson = result.json;
-             alert(rawjson);
-             sh.shRawJsonCallback(shSuccess,function(){});
-         }
-         sh.shRawJsonCallback(shSuccess,function(){});
-         
-         
+		 console.log("Anurag starting app with shsample");
 		sh.streethawkinit();
 		//sh.shSetManualLocation(-33.125,151.125);
 		//sh.displayBadge(1);
@@ -79,11 +68,15 @@
 		sh.shSendSimpleFeedback("Hello","phonegap");
 		sh.tagString("sh_facebook","10200625031223869");
 		sh.currentPage("page 2");
-        alert("Anurag 2");
-        sh.originateShareWithSourceSelection("1","shsample://setparams?parma1=30&param2=45","http://www.streethawk.com");
-        
-        //sh.shDeeplinking(function(result){alert(result)},function(){});
-		
+		//sh.shDeeplinking(function(result){alert(result)},function(){});		
+		function shSuccess(result){
+            var title = result.title;
+            var message  = result.message;
+            var rawjson = result.json;
+            alert(rawjson);
+            sh.shRawJsonCallback(shSuccess,function(){});
+        }
+    	sh.shRawJsonCallback(shSuccess,function(){});
         //console.log("Anurag") 
         //function customDialogResult(result){
           //      console.log("Anurag*************************************************");
