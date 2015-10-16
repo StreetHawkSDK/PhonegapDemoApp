@@ -43,7 +43,7 @@
             app.initialize();
             document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady() {
-    	var sh = cordova.require("com.streethawk.plugin.Streethawk");
+    	var sh = cordova.require("com.streethawk.core.Streethawk");
         var res;
         sh.shSetEnableLogs(true);
         var argumentsArray = [];
