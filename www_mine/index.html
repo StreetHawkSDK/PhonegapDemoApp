@@ -38,12 +38,12 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="plugins/com.streethawk.plugin/www/Streethawk.js"></script>
+        <script type="text/javascript" src="plugins/com.streethawk.core/www/Streethawk.js"></script>
         <script type="text/javascript">
             app.initialize();
             document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady() {
-    	var sh = cordova.require("com.streethawk.plugin.Streethawk");
+    	var sh = cordova.require("com.streethawk.core.Streethawk");
         
         sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
         //sh.shEnableLogs(function(result){alert("enable logs: " + result)},function(){});

@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />    
-    <gap:plugin name="com.streethawk.plugin" version="1.5.4">
+    <gap:plugin name="com.streethawk.core" version="1.5.4">
         <param name="APP_KEY" value="SHSamplePG" />
         <param name="URL_SCHEME" value="shsamplepg" />
     </gap:plugin>

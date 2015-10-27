@@ -19,14 +19,14 @@
 
 function pauseAlert(){
     var e=document.getElementsByName("pausedropdown")[0];	
-	var mp = cordova.require("com.streethawk.plugin.Streethawk");
+	var mp = cordova.require("com.streethawk.core.Streethawk");
 	mp.shSetAlertSetting(e.value);
 	var result  = getAlertSetting();
 	document.forms['textbox'].elements['alertsettings'].value = e.value;
 }
 
 function getAlertSetting(){
-	var mp = cordova.require("com.streethawk.plugin.Streethawk");
+	var mp = cordova.require("com.streethawk.core.Streethawk");
 	var value;
 	mp.shAlertSettings(function(result){value=result},function(){});
 	return value;

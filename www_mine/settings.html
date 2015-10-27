@@ -47,7 +47,7 @@
         <script type="text/javascript">
          document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady() {
-	var mp = cordova.require("com.streethawk.plugin.StreethawkLibrary");
+	var mp = cordova.require("com.streethawk.core.Streethawk");
         mp.currentPage("setting");
 		var result = getAlertSetting();
         document.forms['textbox'].elements['alertsettings'].value = result;
