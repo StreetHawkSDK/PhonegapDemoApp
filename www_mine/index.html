@@ -49,14 +49,8 @@
             alert("Fail: " + result);
         }
 
-        //sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
+        sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
         //sh.shEnableLogs(function(result){alert("enable logs: " + result)}, failCallback);
-        
-        //custom activity
-        //var argumentsArray = [];
-        //argumentsArray.push({settings:"settings.html"});
-        //argumentsArray.push({home:"index.html"});
-        //sh.shCustomActivityList(argumentsArray);
         
         //default location and notification
         //sh.shSetDefaultLocationSupport(false); //not promote location permission until enable
@@ -65,14 +59,13 @@
         //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
         
         //init
-        sh.setAppKey("SHSample");
+        //sh.setAppKey("SHSample");
         //sh.setAdvertisementId("BEE83220-9385-4B36-81E1-BF4305834093");
-		//sh.shSetBeaconSupport(true);
 		//sh.shSetiTunesId("507040546");
-        //sh.shiTunesId(function(result){alert("itunes id: " + result)}, failCallback);
 		//sh.shSetGcmSenderId("666472741872");
 		sh.streethawkinit();
-        sh.shGetAppKey(function(result){alert("app key: " + result)}, failCallback);
+        //sh.shGetAppKey(function(result){alert("app key: " + result)}, failCallback);
+        //sh.shiTunesId(function(result){alert("itunes id: " + result)}, failCallback);
         
         //change default settings
         //sh.shSetIsUseLocation(true);
@@ -176,9 +169,6 @@
         //sh.originateShareWithSourceSelection("child_campaign", "shsamplepg://launchvc?path=value", "http://www.streethawk.com");
 
         //ios not use
-        //sh.sendLogForTagUser();
-        //sh.shSetManualLocation();
-        //sh.displayBadge(1);
         //sh.setUseCustomDialog(false);
         //sh.forcePushToNotificationBar(true);
         //sh.shEnterBeacon();
