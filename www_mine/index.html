@@ -45,67 +45,77 @@
 	function onDeviceReady() {
     	var sh = cordova.require("com.streethawk.core.Streethawk");
         
-        sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
-        //sh.shEnableLogs(function(result){alert("enable logs: " + result)},function(){});
+        function failCallback(result) {
+            alert("Fail: " + result);
+        }
+
+        //sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
+        //sh.shEnableLogs(function(result){alert("enable logs: " + result)}, failCallback);
         
         //custom activity
-        var argumentsArray = [];
-        argumentsArray.push({settings:"settings.html"});
-        argumentsArray.push({home:"index.html"});
-        sh.shCustomActivityList(argumentsArray);
+        //var argumentsArray = [];
+        //argumentsArray.push({settings:"settings.html"});
+        //argumentsArray.push({home:"index.html"});
+        //sh.shCustomActivityList(argumentsArray);
         
         //default location and notification
         //sh.shSetDefaultLocationSupport(false); //not promote location permission until enable
-        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)},function(){});
+        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)}, failCallback);
         //sh.shSetDefaultPushNotificationSupport(false); //not promote notification permission until enable
-        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
+        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
         
         //init
-        //sh.setAppKey("SHSample");
-		sh.shSetBeaconSupport(true);
-		sh.shSetiTunesId("507040546");
-        //sh.shiTunesId(function(result){alert("itunes id: " + result)},function(){});
-		sh.shSetGcmSenderId("666472741872");
+        sh.setAppKey("SHSample");
+        //sh.setAdvertisementId("BEE83220-9385-4B36-81E1-BF4305834093");
+		//sh.shSetBeaconSupport(true);
+		//sh.shSetiTunesId("507040546");
+        //sh.shiTunesId(function(result){alert("itunes id: " + result)}, failCallback);
+		//sh.shSetGcmSenderId("666472741872");
 		sh.streethawkinit();
-        //sh.shGetAppKey(function(result){alert("app key: " + result)},function(){});
+        sh.shGetAppKey(function(result){alert("app key: " + result)}, failCallback);
         
         //change default settings
         //sh.shSetIsUseLocation(true);
-        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)},function(){});
+        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)}, failCallback);
         //sh.shSetIsPushNotificationEnabled(true);
-        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)},function(){});
+        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
         
         //tag
-        //sh.tagNumeric("numeric_key", 5, function(result){alert("tag numeric result: " + result)}, function(){});
-        //sh.tagString("string_key", "liked", function(result){alert("tag string result: " + result)}, function(){});
-        //sh.tagString("sh_phone", "abcdefg", function(result){alert("tag sh_phone result: " + result)}, function(){});
-        //sh.tagString("sh_phone", "+123456", function(result){alert("tag sh_phone result: " + result)}, function(){});
+        //sh.tagCuid("myidentifier123456", function(result){alert("tag cuid result: " + result)}, failCallback);
+        //sh.tagNumeric("numeric_key", 5, function(result){alert("tag numeric result: " + result)}, failCallback);
+        //sh.tagString("string_key", "liked", function(result){alert("tag string result: " + result)}, failCallback);
+        //sh.tagString("sh_phone", "abcdefg", function(result){alert("tag sh_phone result: " + result)}, failCallback);
+        //sh.tagString("sh_phone", "+123456", function(result){alert("tag sh_phone result: " + result)}, failCallback);
         //sh.tagString("sh_email", "anurag@streethawk.com");
-        //sh.tagDatetime("date_key", "2016-6-18", function(result){alert("tag datetime result: " + result)}, function(){});
-        //sh.incrementTag("numeric_key", function(result){alert("increment tag result: " + result)}, function(){});
-        //sh.removeTag("numeric_key", function(result){alert("remove tag result: " + result)}, function(){});
+        //sh.tagDatetime("date_key", "2016-6-18", function(result){alert("tag datetime result: " + result)}, failCallback);
+        //sh.incrementTag("numeric_key", function(result){alert("increment tag result: " + result)}, failCallback);
+        //sh.removeTag("numeric_key", function(result){alert("remove tag result: " + result)}, failCallback);
         
         //view enter/exit
-        sh.currentPage("index");
+        //sh.notifyViewEnter("index.html");
+        //sh.notifyViewExit("index.html");
 		
 		//feedback
         //sh.shSendSimpleFeedback("feedback title", "hello, this is feedback message");
         
+        //install id
+        //sh.getInstallId(function(result){alert("install id: " + result)}, failCallback);
+        
         //sdk version
-        //sh.getSHLibraryVersion(function(result){alert("sdk version: " + result)},function(){});
+        //sh.getSHLibraryVersion(function(result){alert("sdk version: " + result)}, failCallback);
         
         //streethawk format current time
-        //sh.getCurrentFormattedDateTime(function(result){alert("current time: " + result)},function(){});
+        //sh.getCurrentFormattedDateTime(function(result){alert("current time: " + result)}, failCallback);
         
         //alert setting
-        //sh.shSetAlertSetting(60);
-		//sh.shAlertSettings(function(result){alert("alert settings: " + result)},function(){});
+        //sh.shSetAlertSetting(60, function(){}, failCallback);
+		//sh.shGetAlertSettings(function(result){alert("alert settings: " + result)}, failCallback);
 		
         //open url
-		sh.shDeeplinking(function(result){alert("open url: " + result)},function(){});
+		//sh.shDeeplinking(function(result){alert("open url: " + result)}, failCallback);
         
         //launch page
-        sh.shRegisterViewCallback(function(result){alert("launch page by callback: " + result)},function(){});
+        //sh.shRegisterViewCallback(function(result){alert("launch page by callback: " + result)}, failCallback);
         
         //raw json
 		function rawjsonSuccess(result)
@@ -115,7 +125,7 @@
             var rawjson = result.json;
             alert("raw json callback. \ntitle: " + title + ", message: " + message + ", json: " + rawjson + ".");
         }
-        sh.shRawJsonCallback(rawjsonSuccess, function(){});
+        //sh.shRawJsonCallback(rawjsonSuccess, failCallback);
         
         //custom confirm dialog
         function pushDataSuccess(result)
@@ -128,7 +138,7 @@
             alert("custom dialog callback. \naction: " + action + ", msgid: " + msgid + ", title: " + title + ", message: " + message + ", data: " + data + ".");
             sh.sendPushResult(msgid, 1); //let continue as accept
         }
-        //sh.pushDataCallback(pushDataSuccess, function(){});
+        //sh.pushDataCallback(pushDataSuccess, failCallback);
         
         //handle push result
         function pushResultSuccess(result)
@@ -141,7 +151,7 @@
             var data = result.data;
             alert("push result callback. \nresult: " + pushresult + ", action: " + action + ", msgid: " + msgid + ", title: " + title + ", message: " + message + ", data: " + data + ".");
         }
-        //sh.pushResultCallback(pushResultSuccess, function(){});
+        //sh.pushResultCallback(pushResultSuccess, failCallback);
         
         //feed, not tested same as Android, for further release.
         function feedItemSuccess(result)
@@ -153,26 +163,26 @@
             //    sh.reportFeedRead(feed.feedId, 1);
             //}
         }
-        sh.feedItemCallback(feedItemSuccess, function(){});
+        //sh.feedItemCallback(feedItemSuccess, failCallback);
         function notifyNewFeedSuccess()
         {
             alert("New feed found.");
             sh.shGetFeedDataFromServer(0);
         }
-        sh.notifyNewFeedCallback(notifyNewFeedSuccess, function(){});
+        //sh.notifyNewFeedCallback(notifyNewFeedSuccess, failCallback);
         
         //pointzi
-        //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, function(){});
+        //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, failCallback);
         //sh.originateShareWithSourceSelection("child_campaign", "shsamplepg://launchvc?path=value", "http://www.streethawk.com");
 
         //ios not use
-        sh.sendLogForTagUser();
-        sh.shSetManualLocation();
-        sh.displayBadge(1);
-        sh.setUseCustomDialog(false);
-        sh.shEnterBeacon();
-        sh.shExitBeacon();
-        sh.forcePushToNotificationBar(true);
+        //sh.sendLogForTagUser();
+        //sh.shSetManualLocation();
+        //sh.displayBadge(1);
+        //sh.setUseCustomDialog(false);
+        //sh.forcePushToNotificationBar(true);
+        //sh.shEnterBeacon();
+        //sh.shExitBeacon();
     }
         
     //Phonegap internal plugin CDVHandleOpenURL has same function as `sh.shDeeplinking(function(result){alert("open url: " + result)},function(){});` both when App in BG and App not launch.
