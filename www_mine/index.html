@@ -50,13 +50,12 @@
         }
 
         sh.shSetEnableLogs(true); //set debug mode before custom activity so that submit every time
-        //sh.shEnableLogs(function(result){alert("enable logs: " + result)}, failCallback);
         
         //default location and notification
-        //sh.shSetDefaultLocationSupport(false); //not promote location permission until enable
-        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)}, failCallback);
-        //sh.shSetDefaultPushNotificationSupport(false); //not promote notification permission until enable
-        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
+        //sh.shSetDefaultLocationService(false); //not promote location permission until enable
+        //sh.shGetLocationEnabled(function(result){alert("location enabled: " + result)}, failCallback);
+        //sh.shSetDefaultNotificationService(false); //not promote notification permission until enable
+        //sh.shGetNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
         
         //init
         //sh.setAppKey("SHSample");
@@ -68,10 +67,10 @@
         //sh.shiTunesId(function(result){alert("itunes id: " + result)}, failCallback);
         
         //change default settings
-        //sh.shSetIsUseLocation(true);
-        //sh.shIsUseLocation(function(result){alert("location enabled: " + result)}, failCallback);
-        //sh.shSetIsPushNotificationEnabled(true);
-        //sh.shIsPushNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
+        //sh.shSetLocationEnabled(true);
+        //sh.shGetLocationEnabled(function(result){alert("location enabled: " + result)}, failCallback);
+        //sh.shSetNotificationEnabled(true);
+        //sh.shGetNotificationEnabled(function(result){alert("notification enabled: " + result)}, failCallback);
         
         //tag
         //sh.tagCuid("myidentifier123456", function(result){alert("tag cuid result: " + result)}, failCallback);
