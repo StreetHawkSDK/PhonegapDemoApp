@@ -46,11 +46,6 @@
     	var sh = cordova.require("com.streethawk.core.Streethawk");
         var res;
         sh.shSetEnableLogs(true);
-        var argumentsArray = [];
-		argumentsArray.push({SettingsPG:"settings.html"});
-		argumentsArray.push({home:"index.html"});
-		sh.shCustomActivityList(argumentsArray);
-		sh.shSetBeaconSupport(true);
 		sh.shSetiTunesId("abc");
 		sh.shSetGcmSenderId("666472741872");
 		//sh.setUseCustomDialog(true);
@@ -68,9 +63,7 @@
          
          
 		sh.streethawkinit();
-		//sh.shSetManualLocation(-33.125,151.125);
-		//sh.displayBadge(1);
-		sh.currentPage("index");
+		sh.notifyViewEnter("index");
 		sh.tagNumeric("Level reached",5);
         sh.tagString("ProductOffer","liked");
         sh.tagString("sh_cuid","anurag@streethawk.com");
@@ -78,7 +71,7 @@
 		sh.removeTag("UserDeleted");
 		sh.shSendSimpleFeedback("Hello","phonegap");
 		sh.tagString("sh_facebook","10200625031223869");
-		sh.currentPage("page 2");
+		sh.notifyViewEnter("page 2");
         alert("Anurag 2");
         sh.originateShareWithSourceSelection("1","shsample://setparams?parma1=30&param2=45","http://www.streethawk.com");
         
