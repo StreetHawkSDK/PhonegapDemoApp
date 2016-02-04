@@ -1,4 +1,10 @@
 .DS_Store
-platforms
 ios.json
 plugins
+platforms/ios/cordova
+platforms/ios/CordovaLib
+platforms/ios/platform_www
+platforms/ios/SHSamplePG.xcodeproj/project.xcworkspace/xcuserdata
+platforms/ios/SHSamplePG.xcodeproj/xcuserdata
+platforms/ios/SHSamplePG/Resources/StreetHawkCoreRes.bundle
+platforms/ios/www

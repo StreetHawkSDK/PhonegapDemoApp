@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.streethawkapp.SHSamplePG" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Streethawk">
+        <param name="ios-package" value="Streethawk" />
+    </feature>
+    <name>SHSamplePG</name>
+    <description>
+        Sample application to demonstrate Streethawk Phonegap plugin.
+    </description>
+    <author email="support@streethawk.com" href="http://www.streethawk.com">
+        Streethawk
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <gap:plugin name="com.streethawk.core" version="1.5.4">
+        <param name="APP_KEY" value="SHSamplePG" />
+        <param name="URL_SCHEME" value="shsamplepg" />
+    </gap:plugin>
+</widget>
