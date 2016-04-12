@@ -1,10 +1,8 @@
 {
-    "Social.framework": 1,
-    "MessageUI.framework": 1,
-    "QuartzCore.framework": 1,
     "libsqlite3.dylib": 1,
     "CoreTelephony.framework": 1,
     "CoreLocation.framework": 1,
     "CoreBluetooth.framework": 1,
-    "SystemConfiguration.framework": 1
+    "SystemConfiguration.framework": 1,
+    "CoreSpotlight.framework": 1
 }
