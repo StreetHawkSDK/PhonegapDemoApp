@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		0B4BEBCC475F4708A2C0DF0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAA1F67EF441EE8AE1AD7D /* CoreLocation.framework */; };
@@ -53,6 +52,18 @@
 		E49034B616E344D281FED62B /* Streethawk.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD8D17DB6D4B82BE145361 /* Streethawk.m */; };
 		EBC38A200D1F4F4482C3009E /* SHApp+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EA2FE3BDA44C17A056F776 /* SHApp+Location.m */; };
 		F13D7ED949994361B9553401 /* SHAppStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEA52DAE09419FA76A40B5 /* SHAppStatus.m */; };
+		8261CEF633B4474987666695 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA36B5883E442E788286744 /* QuartzCore.framework */; };
+		E0988E9A4E164F1781257F63 /* SHAlertSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC00753CE21451CBBE6622B /* SHAlertSettingsViewController.m */; };
+		A50D0BDD31C946A085243C48 /* SHNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FB9EE9EAA4DF6BABE7758 /* SHNotificationHandler.m */; };
+		2794F6847DDE4E6B9F1C9002 /* SHSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E269C1DCD9D4B689C1C86EE /* SHSlideViewController.m */; };
+		CCA2F791EC2C453EBE2ECC97 /* SHInteractiveButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F89AF69180C44E9AFD2AD77 /* SHInteractiveButtons.m */; };
+		F4DFE597237742D3B559DED8 /* SHNotificationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC91AF02C8E4F8ABC30C92E /* SHNotificationBridge.m */; };
+		BDABDC2506554A969D93023A /* SHPushDataCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 748378C7A0B14655BC887E9B /* SHPushDataCallback.m */; };
+		803B2132592F44D798745F4C /* SHSlideWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAF96DFA354548A58D6E61 /* SHSlideWebViewController.m */; };
+		5E04AF15AAF74029ADD0303B /* InteractivePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B81E9271184667862911B2 /* InteractivePush.m */; };
+		D90916006DD14385806C6ED7 /* SHApp+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FEB915F61D4E58AC32661E /* SHApp+Notification.m */; };
+		AA7111E68D6849429CFD095A /* CBAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8317436F1A944FB8ADA87707 /* CBAutoScrollLabel.m */; };
+		75AA9BBEB686441EA63BDA75 /* Emojione.m in Sources */ = {isa = PBXBuildFile; fileRef = E4595F4C23AF4034AFEB5677 /* Emojione.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +179,31 @@
 		F88D5E961F244175BE06F4CA /* SHAFHTTPSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SHAFHTTPSessionManager.h; path = com.streethawk.core/SHAFHTTPSessionManager.h; sourceTree = "<group>"; };
 		FC0B44822EF4429B9FA56EC9 /* SHAFURLResponseSerialization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SHAFURLResponseSerialization.h; path = com.streethawk.core/SHAFURLResponseSerialization.h; sourceTree = "<group>"; };
 		FF94CEB2E8C04A389DDD2567 /* SHViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SHViewController.m; path = com.streethawk.core/SHViewController.m; sourceTree = "<group>"; };
+		8AA36B5883E442E788286744 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5EC00753CE21451CBBE6622B /* SHAlertSettingsViewController.m */ = {isa = PBXFileReference; name = "SHAlertSettingsViewController.m"; path = "com.streethawk.push/SHAlertSettingsViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E19FB9EE9EAA4DF6BABE7758 /* SHNotificationHandler.m */ = {isa = PBXFileReference; name = "SHNotificationHandler.m"; path = "com.streethawk.push/SHNotificationHandler.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2E269C1DCD9D4B689C1C86EE /* SHSlideViewController.m */ = {isa = PBXFileReference; name = "SHSlideViewController.m"; path = "com.streethawk.push/SHSlideViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1F89AF69180C44E9AFD2AD77 /* SHInteractiveButtons.m */ = {isa = PBXFileReference; name = "SHInteractiveButtons.m"; path = "com.streethawk.push/SHInteractiveButtons.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4CC91AF02C8E4F8ABC30C92E /* SHNotificationBridge.m */ = {isa = PBXFileReference; name = "SHNotificationBridge.m"; path = "com.streethawk.push/SHNotificationBridge.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		748378C7A0B14655BC887E9B /* SHPushDataCallback.m */ = {isa = PBXFileReference; name = "SHPushDataCallback.m"; path = "com.streethawk.push/SHPushDataCallback.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0BBAF96DFA354548A58D6E61 /* SHSlideWebViewController.m */ = {isa = PBXFileReference; name = "SHSlideWebViewController.m"; path = "com.streethawk.push/SHSlideWebViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		89B81E9271184667862911B2 /* InteractivePush.m */ = {isa = PBXFileReference; name = "InteractivePush.m"; path = "com.streethawk.push/InteractivePush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		21FEB915F61D4E58AC32661E /* SHApp+Notification.m */ = {isa = PBXFileReference; name = "SHApp+Notification.m"; path = "com.streethawk.push/SHApp+Notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8317436F1A944FB8ADA87707 /* CBAutoScrollLabel.m */ = {isa = PBXFileReference; name = "CBAutoScrollLabel.m"; path = "com.streethawk.push/CBAutoScrollLabel.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E4595F4C23AF4034AFEB5677 /* Emojione.m */ = {isa = PBXFileReference; name = "Emojione.m"; path = "com.streethawk.push/Emojione.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F11213ABD8624FCAA10932DF /* SHAlertSettingsViewController.h */ = {isa = PBXFileReference; name = "SHAlertSettingsViewController.h"; path = "com.streethawk.push/SHAlertSettingsViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		07D2967A263C401B80A1E8AA /* SHNotificationHandler.h */ = {isa = PBXFileReference; name = "SHNotificationHandler.h"; path = "com.streethawk.push/SHNotificationHandler.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		712A473DA11E4FC5BF9CA3D0 /* SHSlideViewController.h */ = {isa = PBXFileReference; name = "SHSlideViewController.h"; path = "com.streethawk.push/SHSlideViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3E318AE9C1024354982DF07D /* SHInteractiveButtons.h */ = {isa = PBXFileReference; name = "SHInteractiveButtons.h"; path = "com.streethawk.push/SHInteractiveButtons.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4043ABBD6D3342368F871953 /* SHNotificationBridge.h */ = {isa = PBXFileReference; name = "SHNotificationBridge.h"; path = "com.streethawk.push/SHNotificationBridge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3B8E9EE9B66049A3A9C39EAC /* SHPushDataCallback.h */ = {isa = PBXFileReference; name = "SHPushDataCallback.h"; path = "com.streethawk.push/SHPushDataCallback.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		515FED7388924C5EAA6D8595 /* SHSlideWebViewController.h */ = {isa = PBXFileReference; name = "SHSlideWebViewController.h"; path = "com.streethawk.push/SHSlideWebViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C5B981314084455584C982D7 /* InteractivePush.h */ = {isa = PBXFileReference; name = "InteractivePush.h"; path = "com.streethawk.push/InteractivePush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		585EAFC203464BA58C3BC6F1 /* ISHCustomiseHandler.h */ = {isa = PBXFileReference; name = "ISHCustomiseHandler.h"; path = "com.streethawk.push/ISHCustomiseHandler.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9624DC9936A14A5281C9CE6F /* ISHPhonegapObserver.h */ = {isa = PBXFileReference; name = "ISHPhonegapObserver.h"; path = "com.streethawk.push/ISHPhonegapObserver.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2ACE3A39CA994ACA8B7F735D /* SHApp+Notification.h */ = {isa = PBXFileReference; name = "SHApp+Notification.h"; path = "com.streethawk.push/SHApp+Notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FF700CB077804E4D8F9876D2 /* CBAutoScrollLabel.h */ = {isa = PBXFileReference; name = "CBAutoScrollLabel.h"; path = "com.streethawk.push/CBAutoScrollLabel.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71D10F156DFC4D649BAD1C75 /* Emojione.h */ = {isa = PBXFileReference; name = "Emojione.h"; path = "com.streethawk.push/Emojione.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +218,7 @@
 				8155432510FA420BAB40E833 /* CoreBluetooth.framework in Frameworks */,
 				4280C30BF7B74CA49F65F698 /* SystemConfiguration.framework in Frameworks */,
 				68CD8F2CD36041E7B370B608 /* CoreSpotlight.framework in Frameworks */,
+				8261CEF633B4474987666695 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +295,7 @@
 				200A7033D8D84B2DA4B930E8 /* CoreBluetooth.framework */,
 				E11517804E144E6D883F9742 /* SystemConfiguration.framework */,
 				F7606D7A577A41299E1DA36A /* CoreSpotlight.framework */,
+				8AA36B5883E442E788286744 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,6 +390,30 @@
 				26BA67BFA2664BCF914D9F80 /* SHLocationManager.h */,
 				AE0E2B94D0C74C1B97A49B78 /* SHApp+Location.h */,
 				6EFA83313FCA41C2AB96BDB7 /* SHReachability.h */,
+				5EC00753CE21451CBBE6622B /* SHAlertSettingsViewController.m */,
+				E19FB9EE9EAA4DF6BABE7758 /* SHNotificationHandler.m */,
+				2E269C1DCD9D4B689C1C86EE /* SHSlideViewController.m */,
+				1F89AF69180C44E9AFD2AD77 /* SHInteractiveButtons.m */,
+				4CC91AF02C8E4F8ABC30C92E /* SHNotificationBridge.m */,
+				748378C7A0B14655BC887E9B /* SHPushDataCallback.m */,
+				0BBAF96DFA354548A58D6E61 /* SHSlideWebViewController.m */,
+				89B81E9271184667862911B2 /* InteractivePush.m */,
+				21FEB915F61D4E58AC32661E /* SHApp+Notification.m */,
+				8317436F1A944FB8ADA87707 /* CBAutoScrollLabel.m */,
+				E4595F4C23AF4034AFEB5677 /* Emojione.m */,
+				F11213ABD8624FCAA10932DF /* SHAlertSettingsViewController.h */,
+				07D2967A263C401B80A1E8AA /* SHNotificationHandler.h */,
+				712A473DA11E4FC5BF9CA3D0 /* SHSlideViewController.h */,
+				3E318AE9C1024354982DF07D /* SHInteractiveButtons.h */,
+				4043ABBD6D3342368F871953 /* SHNotificationBridge.h */,
+				3B8E9EE9B66049A3A9C39EAC /* SHPushDataCallback.h */,
+				515FED7388924C5EAA6D8595 /* SHSlideWebViewController.h */,
+				C5B981314084455584C982D7 /* InteractivePush.h */,
+				585EAFC203464BA58C3BC6F1 /* ISHCustomiseHandler.h */,
+				9624DC9936A14A5281C9CE6F /* ISHPhonegapObserver.h */,
+				2ACE3A39CA994ACA8B7F735D /* SHApp+Notification.h */,
+				FF700CB077804E4D8F9876D2 /* CBAutoScrollLabel.h */,
+				71D10F156DFC4D649BAD1C75 /* Emojione.h */,
 			);
 			name = Plugins;
 			path = SHSamplePG/Plugins;
@@ -394,7 +456,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 720;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SHSamplePG" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -500,6 +562,17 @@
 				669B41CEEBF7483D8AFF638F /* SHLocationManager.m in Sources */,
 				EBC38A200D1F4F4482C3009E /* SHApp+Location.m in Sources */,
 				75DCAA5685C04D32AAB6709A /* SHReachability.m in Sources */,
+				E0988E9A4E164F1781257F63 /* SHAlertSettingsViewController.m in Sources */,
+				A50D0BDD31C946A085243C48 /* SHNotificationHandler.m in Sources */,
+				2794F6847DDE4E6B9F1C9002 /* SHSlideViewController.m in Sources */,
+				CCA2F791EC2C453EBE2ECC97 /* SHInteractiveButtons.m in Sources */,
+				F4DFE597237742D3B559DED8 /* SHNotificationBridge.m in Sources */,
+				BDABDC2506554A969D93023A /* SHPushDataCallback.m in Sources */,
+				803B2132592F44D798745F4C /* SHSlideWebViewController.m in Sources */,
+				5E04AF15AAF74029ADD0303B /* InteractivePush.m in Sources */,
+				D90916006DD14385806C6ED7 /* SHApp+Notification.m in Sources */,
+				AA7111E68D6849429CFD095A /* CBAutoScrollLabel.m in Sources */,
+				75AA9BBEB686441EA63BDA75 /* Emojione.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +613,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.streethawkapp.SHSamplePG;
 				PRODUCT_NAME = SHSamplePG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SH_FEATURE_NOTIFICATION",
+				);
 			};
 			name = Debug;
 		};
@@ -566,6 +643,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.streethawkapp.SHSamplePG;
 				PRODUCT_NAME = SHSamplePG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SH_FEATURE_NOTIFICATION",
+				);
 			};
 			name = Release;
 		};
@@ -598,6 +679,10 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SH_FEATURE_NOTIFICATION",
+				);
 			};
 			name = Debug;
 		};
@@ -628,6 +713,10 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SH_FEATURE_NOTIFICATION",
+				);
 			};
 			name = Release;
 		};

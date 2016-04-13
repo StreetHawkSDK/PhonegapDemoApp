@@ -151,6 +151,9 @@
         }
         //sh.pushResultCallback(pushResultSuccess, failCallback);
         
+        //none StreetHawk payload
+        sh.registerNonSHPushPayloadObserver(function(result){alert("none StreetHawk payload callback: " + JSON.stringify(result))}, failCallback);
+        
         //feed, not tested same as Android, for further release.
         function feedItemSuccess(result)
         {
