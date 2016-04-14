@@ -181,11 +181,19 @@
         //pointzi
         //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, failCallback);
         //sh.originateShareWithSourceSelection("child_campaign", "shsamplepg://launchvc?path=value", "http://www.streethawk.com");
+        
+        //geofence enter/exit callback
+        sh.setNotifyGeofenceEventCallback(function(result){alert("geofence enter/exit callback: " + JSON.stringify(result))}, failCallback);
+                
+        //beacon enter/exit callback
+        sh.setNotifyBeaconDetectCallback(function(result){alert("beacon enter/exit callback: " + JSON.stringify(result))}, failCallback);
 
         //ios not use
         //sh.setUseCustomDialog(false);
         //sh.forcePushToNotificationBar(true);
         //sh.getIcon("icon_name");
+        //sh.startBeaconMonitoring();
+        //sh.stopBeaconMonitoring();
         //sh.shEnterBeacon();
         //sh.shExitBeacon();
     }
