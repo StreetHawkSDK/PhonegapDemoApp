@@ -154,6 +154,12 @@
         //none StreetHawk payload
         sh.registerNonSHPushPayloadObserver(function(result){alert("none StreetHawk payload callback: " + JSON.stringify(result))}, failCallback);
         
+        //set interactive button pairs
+        sh.addInteractivePushButtonPairWithIcons("button1", "icon1", "button2", "icon2", "pair1");
+        sh.addInteractivePushButtonPairWithIcons("Invite", "", "Test", "", "InviteTest");
+        sh.addInteractivePushButtonPair("agree", "disagree", "Agree_Disagree");
+        sh.setInteractivePushBtnPair();
+        
         //feed, not tested same as Android, for further release.
         function feedItemSuccess(result)
         {
@@ -179,6 +185,7 @@
         //ios not use
         //sh.setUseCustomDialog(false);
         //sh.forcePushToNotificationBar(true);
+        //sh.getIcon("icon_name");
         //sh.shEnterBeacon();
         //sh.shExitBeacon();
     }
