@@ -178,6 +178,9 @@
         }
         //sh.notifyNewFeedCallback(notifyNewFeedSuccess, failCallback);
         
+        //feed ack
+        //sh.reportFeedAck(100);
+        
         //pointzi
         //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, failCallback);
         //sh.originateShareWithSourceSelection("child_campaign", "shsamplepg://launchvc?path=value", "http://www.streethawk.com");
@@ -187,6 +190,12 @@
                 
         //beacon enter/exit callback
         sh.setNotifyBeaconDetectCallback(function(result){alert("beacon enter/exit callback: " + JSON.stringify(result))}, failCallback);
+        
+        //location set report work home only
+    	//sh.reportWorkHomeLocationOnly(true);
+                
+        //location set location update frequency
+        //sh.updateLocationMonitoringParams(1, 2, 3, 4);
 
         //ios not use
         //sh.setUseCustomDialog(false);
