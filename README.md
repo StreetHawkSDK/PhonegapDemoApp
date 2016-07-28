@@ -24,9 +24,10 @@ StreetHawk supports iOS and Android devices.
 4. Add streethawk plugin using command
 
 ```
-  cordova plugin add https://github.com/streethawkphonegap/StreethawkPlugin.git --variable APP_KEY=MyFirstApp
+  cordova plugin add streethawkanalytics  --variable APP_KEY=MyFirstApp --variable URL_SCHEME="<URL_SCHEME_OF_APP>"
+
 ```
-  where MyFirstApp is app_key registered with Streethawk servers
+  where MyFirstApp is app_key registered with Streethawk servers.
   
 5 Run the application using command 
 
@@ -42,7 +43,7 @@ StreetHawk supports iOS and Android devices.
     cordova run Android
 ```    
 ## Streethawk plugin documentation
-For details about Streethawk's plugin, please refer to plugin [documentation]. 
+For details about Streethawk's plugin, please refer to [plugin documentation]:https://streethawk.freshdesk.com/solution/folders/5000254780. 
 
 ## Support
  For further information please contact us at support@streethawk.com  
