@@ -43,10 +43,10 @@ StreetHawk supports iOS and Android devices.
     cordova run Android
 ```    
 ## Streethawk plugin documentation
-For details about Streethawk's plugin, please refer to [plugin documentation]:https://streethawk.freshdesk.com/solution/folders/5000254780. 
+For details about Streethawk's plugin, please refer to [plugin documentation]. 
 
 ## Support
  For further information please contact us at support@streethawk.com  
   
 [Streethawk]:http://streethawk.com/
-[documentation]:http://api.streethawk.com/v1/docs/phonegap-introduction.html
+[plugin documentation]:https://streethawk.freshdesk.com/solution/folders/5000254780
