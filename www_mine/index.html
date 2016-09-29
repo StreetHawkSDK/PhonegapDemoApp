@@ -160,26 +160,29 @@
         sh.addInteractivePushButtonPair("agree", "disagree", "Agree_Disagree");
         sh.setInteractivePushBtnPair();
         
-        //feed, not tested same as Android, for further release.
+        //fetch feed and send feed ack/result
         function feedItemSuccess(result)
         {
-            alert("Fetch feeds: " + result);
-            //for (int i = 0; i < result.count; i ++) //runtime script error
-            //{
-            //    var feed = result[i];
-            //    sh.reportFeedRead(feed.feedId, 1);
-            //}
+            for (i = 0; i < result.length; i++)
+            {
+                var feed = result[i];
+                alert("Fetch feed and send ack/result: " + JSON.stringify(feed));
+                //feed ack
+                sh.reportFeedAck(feed.feed_id);
+                //feed result
+                sh.notifyFeedResult(feed.feed_id, "", "accepted", false, false);
+            }
         }
-        //sh.registerFeedItemCallback(feedItemSuccess, failCallback);
+        sh.registerFeedItemCallback(feedItemSuccess, failCallback);
+        //sh.shGetFeedDataFromServer(0);
+        
         function notifyNewFeedSuccess()
         {
             alert("New feed found.");
-            sh.shGetFeedDataFromServer(0);
         }
         //sh.notifyNewFeedCallback(notifyNewFeedSuccess, failCallback);
         
-        //feed ack
-        //sh.reportFeedAck(100);
+        
         
         //pointzi
         //sh.originateShareWithCampaign("child_campaign", "dialog", "medium", "content", "term", "shsamplepg://launchvc?path=value", "http://www.streethawk.com", function(result){alert("pointzi share url: " + result)}, failCallback);
