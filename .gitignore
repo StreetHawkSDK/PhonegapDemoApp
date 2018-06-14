@@ -1,6 +1,7 @@
 .DS_Store
 ios.json
 plugins
+node_modules
 platforms/ios/cordova
 platforms/ios/CordovaLib
 platforms/ios/platform_www

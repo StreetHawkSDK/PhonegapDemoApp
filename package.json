@@ -1,0 +1,15 @@
+{
+  "name": "com.streethawkapp.shsamplepg",
+  "version": "0.0.1",
+  "displayName": "SHSamplePG",
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-ios": "~4.1.1",
+    "cordova-android": "~7.0.0"
+  }
+}
