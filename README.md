@@ -50,3 +50,12 @@ For details about Streethawk's plugin, please refer to [plugin documentation].
   
 [Streethawk]:http://streethawk.com/
 [plugin documentation]:https://streethawk.freshdesk.com/solution/folders/5000254780
+
+
+## Development
+
+To use a development branch include the plugin like so:
+
+```
+  cordova plugin add "https://github.com/StreetHawkSDK/PhonegapPush.git#develop"  --variable APP_KEY=MyFirstApp --variable URL_SCHEME="<URL_SCHEME_OF_APP>"
+```
